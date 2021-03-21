@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-#cart-button {
+.cart-button {
     width: 90px;
     height: 40px;
     background-color: black;
@@ -23,18 +23,12 @@
 
 }
 
-#cart-button:active {
+.cart-button:active {
     background-color: grey;
 }
 
 .cart {
-    width: 600px;
-    min-height: 300px;
-    background-color: lavender;
-    position: fixed;
-    right: 100px;
-    top: 100px;
-    display: none;
+
 }
 
 .goods-list {
