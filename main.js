@@ -64,15 +64,6 @@ const vue = new Vue({
 
       this.cart.splice(goodIndex - 1, 1);
     },
-
-    searchHandler() {
-              if(this.search === '') {
-                this.filtredGoods = this.goods;
-              }
-              const regexp = new RegExp(this.search, 'gi');
-              this.filtredGoods = this.goods.filter((good) => regexp.test(good.title));
-    },
-
     fetch(error, success) {
             let xhr;
           
