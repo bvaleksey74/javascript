@@ -9,7 +9,7 @@ Vue.component('goods-item', {
 
 Vue.component('cart', {
   template: `<div class="cart">
-  <button class="cart-button" @click="openCartHandler" type="button">Корзина</button>
+  <button class="cart-button" @click="openCartHandler" type="button">Cart</button>
     <div v-if="isVisibleCart" v-on:click="removeHandler">
       <slot></slot>
     </div>
@@ -29,6 +29,15 @@ Vue.component('cart', {
     removeHandler(e) {
       this.$emit('remove', e)
 
+    }
+  }
+})
+Vue.component('search', {
+  template: `<div><button @click="searchItem" type="button">Search</button></div>`,
+  methods: {
+    searchItem(){
+      const regexp = new RegExp(vue.search, 'gi');
+      vue.filtredGoods = vue.goods.filter((good) => regexp.test(good.title));
     }
   }
 })

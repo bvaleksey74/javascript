@@ -28,7 +28,9 @@
 }
 
 .cart {
-
+ border: 2px solid black;
+ display: flex;
+ flex-wrap: wrap;
 }
 
 .goods-list {
@@ -41,8 +43,8 @@
 .goods-item {
     margin-top: 15px;
     padding: 10px;
-    width: 300px;
-    height: 400px;
+    width: 100px;
+    height: 150px;
     background-color: mintcream;
 }
 

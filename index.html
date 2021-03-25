@@ -6,9 +6,9 @@
 </head>
 <body>
   <div id="app">
-    <header>
+    <header>      
       <input id="search" v-model="search" >
-      <button v-on:click="searchHandler">Search</button>
+      <search></search>
       <cart v-on:remove="removeFromCartHandler">
         <goods-item 
           v-for="good in cart" 
@@ -28,6 +28,7 @@
         ></goods-item>
       </div>
     </main>
+    
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
